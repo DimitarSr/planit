@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+/* Custom styles for the calendar component */
+
+.rbc-month-view .rbc-header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5b21b6;
+  background-color: #f5f3ff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.rbc-month-row {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.rbc-date-cell {
+  padding: 4px 6px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.rbc-event {
+  background-color: #7c3aed;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-top: 4px;
+}
+.rbc-time-view .rbc-time-header {
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f5f3ff;
+}
+
+.rbc-time-view .rbc-header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5b21b6;
+  padding: 12px 0;
+  text-align: center;
+  border-right: 1px solid #e5e7eb;
+}
+
+.rbc-time-view .rbc-timeslot-group {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.rbc-time-view .rbc-time-content {
+  border-top: none;
+}
+
+.rbc-time-content {
+  overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+  .rbc-time-view {
+    min-width: 800px;
+  }
+
+  .rbc-header {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+
+  .rbc-toolbar {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .rbc-toolbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
